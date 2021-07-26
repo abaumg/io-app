@@ -13,7 +13,6 @@ import I18n from "../i18n";
 import { maybeNotNullyString } from "../utils/strings";
 import { openWebUrl } from "../utils/url";
 import { getFullLocale } from "../utils/locale";
-import { SectionStatus, SectionStatusKey } from "../types/backendStatus";
 import { setAccessibilityFocus } from "../utils/accessibility";
 import { LevelEnum } from "../../definitions/content/SectionStatus";
 import { IOColors } from "./core/variables/IOColors";
