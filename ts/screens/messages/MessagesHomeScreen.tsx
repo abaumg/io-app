@@ -158,6 +158,10 @@ class MessagesHomeScreen extends React.PureComponent<Props, State> {
         appLogo={true}
         statusAppRef={this.statusAppRef}
       >
+        <SectionStatusComponent
+          sectionKey={"messages"}
+          statusAppRef={this.statusAppRef}
+        />
         {!isSearchEnabled && (
           <React.Fragment>
             <AnimatedScreenContentHeader
@@ -279,10 +283,6 @@ class MessagesHomeScreen extends React.PureComponent<Props, State> {
             />
           </Tab>
         </AnimatedTabs>
-        <SectionStatusComponent
-          sectionKey={"messages"}
-          statusAppRef={this.statusAppRef}
-        />
       </View>
     );
   };
